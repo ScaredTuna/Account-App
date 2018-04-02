@@ -25,7 +25,7 @@ public class AccountManagerTest {
 		account3 = manager.updateAccount(account1.getId(), account3);
 		assertEquals("Jane", manager.getAccount(1).getFirstName());
 		assertEquals("Bloggs", manager.getAccount(1).getSurname());
-		assertEquals(23456789, manager.getAccount(1).getAccountNumber());
+		assertEquals(23456789, (int)manager.getAccount(1).getAccountNumber());
 		account3 = manager.deleteAccount(1);
 		accountList = manager.list();
 		assertEquals(0, accountList.size());

@@ -5,7 +5,7 @@ public class Account {
 	private int id;
 	private String firstName;
 	private String surname;
-	private int accountNumber;
+	private Integer accountNumber;
 	
 	public Account(){}
 	
@@ -39,7 +39,7 @@ public class Account {
 		this.surname = surname;
 	}
 	
-	public int getAccountNumber() {
+	public Integer getAccountNumber() {
 		return accountNumber;
 	}
 

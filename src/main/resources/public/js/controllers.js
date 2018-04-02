@@ -10,7 +10,7 @@ angular.module('app.controllers', []).controller('AccountListController', functi
     }
   };
 }).controller('AccountViewController', function($scope, $stateParams, Account) {
-  $scope.shipwreck = Shipwreck.get({ id: $stateParams.id }); 
+  $scope.account = Account.get({ id: $stateParams.id }); 
 }).controller('AccountCreateController', function($scope, $state, $stateParams, Account) {
   $scope.account = new Account(); 
 
