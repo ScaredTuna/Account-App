@@ -13,7 +13,7 @@ public class HomeControllerTest {
 	@Test
 	public void test() {
 		controller = new HomeController();
-		assertEquals("Welcome to the Account App", controller.home());
+		assertEquals("Welcome to the Account App - Home page located at: localhost:8080/index.html", controller.home());
 	}
 
 }
