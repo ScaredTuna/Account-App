@@ -1,28 +1,50 @@
 package com.account.model;
 
 public class Account {
-
-	public int getId(){
-		return -1;
+	
+	private int id;
+	private String firstName;
+	private String surname;
+	private int accountNumber;
+	
+	public Account(){}
+	
+	public Account(String firstName, String surname, int accountNumber){
+		this.firstName = firstName;
+		this.surname = surname;
+		this.accountNumber = accountNumber;
 	}
 
-	public Account(String string, String string2, int i) {
-		// TODO Auto-generated constructor stub
+	public int getId(){
+		return id;
+	}
+	
+	public void setId(int idIndex) {
+		this.id = idIndex;
 	}
 
 	public String getFirstName() {
-		// TODO Auto-generated method stub
-		return null;
+		return firstName;
 	}
 
+	public void setFirstName(String firstName){
+		this.firstName = firstName;
+	}
+	
 	public String getSurname() {
-		// TODO Auto-generated method stub
-		return null;
+		return surname;
 	}
 
+	public void setSurname(String surname){
+		this.surname = surname;
+	}
+	
 	public int getAccountNumber() {
-		// TODO Auto-generated method stub
-		return -1;
+		return accountNumber;
+	}
+
+	public void setAccountNumber(int accountNumber){
+		this.accountNumber = accountNumber;
 	}
 	
 }

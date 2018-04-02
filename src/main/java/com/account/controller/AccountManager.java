@@ -16,22 +16,23 @@ public class AccountManager {
 	}
 
 	public ArrayList<Account> list() {
-		return null;
+		return new ArrayList<Account>(accountMap.values());
 	}
 
 	public Account updateAccount(int id, Account account) {
-		
+		accountMap.put(id,  account);
 		return account;
 	}
 
-	public Account createAccount(Account account1) {
-		// TODO Auto-generated method stub
-		return null;
+	public Account createAccount(Account account) {
+		account.setId(idIndex);
+		accountMap.put(idIndex, account);
+		idIndex++;
+		return account;
 	}
 
 	public Account deleteAccount(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		return accountMap.remove(id);
 	}
 	
 }
